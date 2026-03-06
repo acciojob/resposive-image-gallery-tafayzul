@@ -1,1 +1,41 @@
 /*  your css code here. If applicable */
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    /* Allows items to wrap to the next line */
+    flex-wrap: wrap; 
+    /* Centers the gallery items horizontally */
+    justify-content: center; 
+    /* Aligns items at the top of their row */
+    align-items: flex-start; 
+    max-width: 1200px;
+}
+
+.gallery img {
+    /* Requirement: Max width of 25vw */
+    max-width: 25vw;
+    /* Requirement: Margin of 10px */
+    margin: 10px;
+    /* Requirement: Border 3px solid #000 */
+    border: 3px solid #000;
+    /* Requirement: Box-shadow */
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+    
+    /* Makes images responsive within their 25vw constraint */
+    height: auto;
+    object-fit: cover;
+}
+
+/* Mobile Responsiveness: On small screens, we might want images to be wider */
+@media (max-width: 600px) {
+    .gallery img {
+        max-width: 80vw;
+    }
+}
