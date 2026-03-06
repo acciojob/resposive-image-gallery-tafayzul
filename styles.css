@@ -1,31 +1,16 @@
-body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-/* Updated selector to match test requirements */
 main.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px;
 }
 
 main.cards img {
-    /* Requirement: max-width 25vw */
-    max-width: 25vw;
-    
-    /* Requirement: margin 10px */
+    /* Keep these here for the other tests */
     margin: 10px;
-    
-    /* Requirement: border 3px solid #000 */
     border: 3px solid #000;
-    
-    /* Requirement: box-shadow */
-    /* Note: Tests expect rgba(0, 0, 0, 0.3) */
     box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
     
+    /* Responsive height */
     height: auto;
 }
